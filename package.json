@@ -4,6 +4,7 @@
         "koa-static": "^4.0.2"
     },
     "scripts": {
-        "build": "sudo node app.js"
+        "build": "sudo node app.js",
+        "deploy": "pm2 deploy deploy.config.js production"
     }
 }
