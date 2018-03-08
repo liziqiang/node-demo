@@ -5,7 +5,7 @@ const fs = require('fs');
  */
 function render(page) {
     return new Promise((resolve, reject) => {
-        let viewUrl = `./views/${page}.html`;
+        let viewUrl = `../views/${page}.html`;
         fs.readFile(viewUrl, 'binary', (err, data) => {
             if (err) {
                 reject(err);
