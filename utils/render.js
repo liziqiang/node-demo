@@ -1,12 +1,13 @@
 const fs = require('fs');
+const path = require('path');
 /**
  * 封装异步文件读取
  * @param {*} page
  */
 function render(page) {
     return new Promise((resolve, reject) => {
-        let viewUrl = `./views/${page}.html`;
-        fs.readFile(viewUrl, 'binary', (err, data) => {
+        let viewUrl = `../views/${page}.html`;
+        fs.readFile(path.join(__dirname, viewUrl), 'binary', (err, data) => {
             if (err) {
                 reject(err);
             } else {
