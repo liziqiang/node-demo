@@ -306,7 +306,7 @@ $('body').append(`
 
 // faster typing in small iframe on codepen homepage
 // let time = window.innerWidth <= 578 ? 4 : 16;
-let time = 1;
+let time = 16;
 
 // starting it off
 writeStyles(styles, 0, time);
