@@ -23,12 +23,13 @@ module.exports = {
    */
   deploy : {
     production : {
-      user : 'root',
-      host,
-      ref  : 'origin/master',
-      repo : 'git@github.com:liziqiang/node-demo.git',
-      path : '/root/site/node-demo',
-      'post-deploy' : 'yarn install && pm2 restart node-demo'
+        user: 'ubuntu',
+        key: '/Users/lizq/.ssh/lizq.pem',
+        host,
+        ref  : 'origin/master',
+        repo : 'git@github.com:liziqiang/node-demo.git',
+        path : '/root/site/node-demo',
+        'post-deploy' : 'yarn install && pm2 restart node-demo'
     }
   }
 };
