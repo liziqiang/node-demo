@@ -28,7 +28,7 @@ module.exports = {
         host,
         ref  : 'origin/master',
         repo : 'git@github.com:liziqiang/node-demo.git',
-        path : '/root/site/node-demo',
+        path : '/ubuntu/site/node-demo',
         'post-deploy' : 'yarn install && pm2 restart node-demo'
     }
   }
