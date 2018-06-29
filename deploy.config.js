@@ -29,7 +29,7 @@ module.exports = {
         ref  : 'origin/master',
         repo : 'git@github.com:liziqiang/node-demo.git',
         path : '/home/ubuntu/site/node-demo',
-        'post-deploy' : 'sudo -s yarn install && pm2 restart node-demo'
+        'post-deploy' : 'sudo -s && yarn install && pm2 restart node-demo'
     }
   }
 };
